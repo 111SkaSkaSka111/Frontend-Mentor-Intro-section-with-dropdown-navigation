@@ -62,9 +62,30 @@ nav {
             align-items: center;
             gap: 30px;
 
+            & .line::before {
+                content: "";
+                position: absolute;
+                height: 3px;
+                background-color: #000;
+                bottom: -6px;
+                left: 51%;
+                right: 51%;
+                transition: all 0.5s ease;
+                border-radius: 3px;
+            }
+
+            & .line:hover::before {
+                left: 10px;
+                right: 10px;
+            }
+
             & li {
+                border: 1px solid transparent;
+                padding: 5px 10px;
                 list-style: none;
                 cursor: pointer;
+                position: relative;
+                transition: all 0.5s;
 
                 & img {
                     margin-left: 3px;
