@@ -305,6 +305,7 @@ nav {
                         box-shadow: none;
                         border-radius: 10px;
                         scale: 1;
+                        background-color: transparent;
 
                         & li {
                             border: 2px solid transparent;
