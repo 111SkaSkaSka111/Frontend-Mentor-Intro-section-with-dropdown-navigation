@@ -280,6 +280,7 @@ nav {
             scale: 0;
             transition: all 0.5s;
             border: 2px solid #000;
+            z-index: 99;
 
             & #navbar_list {
                 display: flex;
